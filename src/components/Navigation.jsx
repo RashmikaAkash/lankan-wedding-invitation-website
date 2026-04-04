@@ -64,7 +64,7 @@ export default function Navigation() {
             className="flex items-center gap-2"
             whileHover={{ scale: 1.05 }}
           >
-            <div className="font-serif text-3xl font-bold bg-gradient-to-r from-gold to-soft-gold bg-clip-text text-transparent">
+            <div className="font-serif text-3xl font-bold bg-gradient-to-r from-black to-soft-gold bg-clip-text text-transparent">
               A & A
             </div>
             <Heart size={20} className="text-gold animate-pulse" />

@@ -1,3 +1,5 @@
+import songTrack from '../assets/Song.mp3';
+
 export const weddingData = {
   // === COUPLE NAMES (in Sinhala) ===
   bride: 'Amiduni',
@@ -79,7 +81,7 @@ export const weddingData = {
   // === MUSIC CONFIG (Edit audio file path) ===
   music: {
     enabled: true,
-    audioPath: '/wedding-music.mp3', // Replace with your music file path
-    allowAutoplay: false // User must click to play due to browser policies
+    audioPath: songTrack,
+    showEnterOverlay: true
   }
 };

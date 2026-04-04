@@ -67,7 +67,10 @@ function App() {
 
         {/* Background Music Player */}
         {weddingData.music && weddingData.music.enabled && (
-          <MusicPlayer musicPath={weddingData.music.audioPath} />
+          <MusicPlayer
+            audioPath={weddingData.music.audioPath}
+            showEnterOverlay={weddingData.music.showEnterOverlay}
+          />
         )}
 
         <Hero
