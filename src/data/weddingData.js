@@ -1,8 +1,8 @@
 export const weddingData = {
   // === COUPLE NAMES (in Sinhala) ===
-  bride: 'අමිදුනී',
-  groom: 'ආකාශ්',
-  tagline: 'සමග අතිනත ගැනීමේ ප්‍රීතිය නිමිත්තෙන්',
+  bride: 'Amiduni',
+  groom: 'Akash',
+  tagline: 'අතිනත ගැනීමේ ප්‍රීතිය නිමිත්තෙන්',
   
   // === WEDDING DATE (Edit this) ===
   weddingDate: '2026-07-18',

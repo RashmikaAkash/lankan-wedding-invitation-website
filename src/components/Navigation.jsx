@@ -65,7 +65,7 @@ export default function Navigation() {
             whileHover={{ scale: 1.05 }}
           >
             <div className="font-serif text-3xl font-bold bg-gradient-to-r from-gold to-soft-gold bg-clip-text text-transparent">
-              ආ & අ
+              A & A
             </div>
             <Heart size={20} className="text-gold animate-pulse" />
           </motion.div>
