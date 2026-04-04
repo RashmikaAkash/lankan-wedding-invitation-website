@@ -27,6 +27,8 @@ export default {
         display: ['Noto Serif Sinhala', 'serif'],
         dancing: ['"Dancing Script"', 'cursive'],
         abhaya: ['"Abhaya Libre"', 'serif'],
+        'sinhala-calligraphy': ['"SinhalaCalligraphy"', '"Sinhala Calligraphy"', '"Abhaya Libre"', 'serif'],
+        'tharu-malee': ['"Tharu Digital Malee"', '"TharuDigitalMalee"', '"Abhaya Libre"', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.8s ease-in',

@@ -2,6 +2,17 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'Tharu Digital Malee';
+  src:
+    local('Tharu Digital Malee'),
+    local('TharuDigitalMalee'),
+    url('./assets/fonts/tharu_digital_malee.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Tharu Digital Malee';
+  src: url('/src/assets/fonts/tharu_digital_malee.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tharu Digital Malee';
+  src: url('/src/assets/fonts/tharu_digital_malee.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-tharu-malee {
+  font-family: 'Tharu Digital Malee', 'Abhaya Libre', 'Noto Serif Sinhala', serif !important;
+}

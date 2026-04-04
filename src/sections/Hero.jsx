@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Sparkles, Moon, Sun } from 'lucide-react';
 import { Button } from '../components/UI';
+import heroBackground from '../assets/Hero image.png';
 
 const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
   const containerVariants = {
@@ -58,18 +59,24 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
     >
       {/* Premium Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-ivory via-cream to-champagne" />
+        <img
+          src={heroBackground}
+          alt="Hero background"
+          className="absolute inset-0 h-full w-full object-cover object-[85%_center] md:object-center scale-[1.02]"
+        />
+        {/* <div className="absolute inset-0 bg-gradient-to-br from-ivory/45 via-cream/35 to-champagne/45" /> */}
+        <div className="absolute inset-0 bg-black/5" />
         {/* Decorative gradients */}
-        <motion.div
-          className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-gold via-soft-gold to-transparent rounded-full blur-3xl opacity-20"
+        {/* <motion.div
+          className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-gold via-soft-gold to-transparent rounded-full blur-3xl opacity-12"
           animate={{ scale: [1, 1.2, 1] }}
           transition={{ duration: 8, repeat: Infinity }}
         />
         <motion.div
-          className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-maroon via-deep-maroon to-transparent rounded-full blur-3xl opacity-15"
+          className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-maroon via-deep-maroon to-transparent rounded-full blur-3xl opacity-10"
           animate={{ scale: [1.2, 1, 1.2] }}
           transition={{ duration: 8, repeat: Infinity, delay: 2 }}
-        />
+        /> */}
         <FloatingParticles />
       </div>
 
@@ -86,14 +93,14 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
   className="mb-4 md:mb-6 flex items-center justify-center gap-2 md:gap-3"
 >
   {/* Moon (Hada) */}
-  <Moon className="w-7 h-7 md:w-8 md:h-8 text-gold" />
+  {/* <Moon className="w-7 h-7 md:w-8 md:h-8 text-gold" /> */}
 
-  <p className="text-gold font-abhaya font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-normal md:tracking-wide leading-tight text-shadow-gold drop-shadow-[0_4px_12px_rgba(201,169,97,0.35)]">
+  <p className="text-black font-sinhala-calligraphy font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-normal md:tracking-wide leading-tight text-shadow-gold drop-shadow-[0_4px_12px_rgba(201,169,97,0.35)]">
     ශ්‍රී සුභ මංගලම්!
   </p>
 
   {/* Sun (Ira) */}
-  <Sun className="w-7 h-7 md:w-8 md:h-8 text-gold" />
+  {/* <Sun className="w-7 h-7 md:w-8 md:h-8 text-gold" /> */}
 </motion.div>
 
         {/* Main Heading */}
@@ -138,7 +145,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
         {/* Tagline */}
         <motion.p
           variants={itemVariants}
-          className="text-base sm:text-lg md:text-2xl text-dark-text font-serif font-light mb-6 md:mb-8 italic leading-relaxed px-1"
+          className="text-base sm:text-lg md:text-4xl text-white font-abhaya font-light mb-6 md:mb-8 leading-relaxed px-1"
         >
           {tagline}
         </motion.p>
