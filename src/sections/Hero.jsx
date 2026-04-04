@@ -104,16 +104,16 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
 </motion.div>
 
         {/* Main Heading */}
-        <motion.div variants={itemVariants} className="mb-6">
+        <motion.div variants={itemVariants} className="mb-1 md:mb-6">
           <h1 className="font-dancing text-6xl md:text-8xl font-bold text-dark-text leading-tight">
             <motion.span
               className="block text-deep-maroon font-dancing"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              <span>{bride}</span>
-              <span>&nbsp;&amp;&nbsp;</span>
-              <span>{groom}</span>
+              <span className="block md:inline">{bride}</span>
+              <span className="block md:inline">&nbsp;&amp;&nbsp;</span>
+              <span className="block md:inline">{groom}</span>
             </motion.span>
             {/* <motion.span
               className="block text-gold my-2 md:my-4"
@@ -145,7 +145,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
         {/* Tagline */}
         <motion.p
           variants={itemVariants}
-          className="text-4xl text-white font-abhaya font-light mb-8 leading-relaxed px-1"
+          className="text-4xl text-white font-abhaya font-light mb-4 md:mb-8 leading-relaxed px-1"
         >
           {tagline}
         </motion.p>
