@@ -27,7 +27,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
 
   // Floating decoration particles
   const FloatingParticles = () => (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden hidden md:block">
       {[...Array(12)].map((_, i) => (
         <motion.div
           key={i}
@@ -62,10 +62,10 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
         <img
           src={heroBackground}
           alt="Hero background"
-          className="absolute inset-0 h-full w-full object-cover object-[85%_center] md:object-center scale-[1.02]"
+          className="absolute inset-0 h-full w-full object-cover object-[90%_center] md:object-center scale-100 md:scale-[1.02] brightness-110 contrast-110 md:brightness-100 md:contrast-100"
         />
         {/* <div className="absolute inset-0 bg-gradient-to-br from-ivory/45 via-cream/35 to-champagne/45" /> */}
-        <div className="absolute inset-0 bg-black/5" />
+        <div className="absolute inset-0 bg-black/0 md:bg-black/5" />
         {/* Decorative gradients */}
         {/* <motion.div
           className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-gold via-soft-gold to-transparent rounded-full blur-3xl opacity-12"
