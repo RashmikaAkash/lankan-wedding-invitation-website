@@ -27,7 +27,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
 
   // Floating decoration particles
   const FloatingParticles = () => (
-    <div className="absolute inset-0 overflow-hidden hidden md:block">
+    <div className="absolute inset-0 overflow-hidden">
       {[...Array(12)].map((_, i) => (
         <motion.div
           key={i}
@@ -55,17 +55,17 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
       {/* Premium Background */}
       <div className="absolute inset-0">
         <img
           src={heroBackground}
           alt="Hero background"
-          className="absolute inset-0 h-full w-full object-cover object-[90%_center] md:object-center scale-100 md:scale-[1.02] brightness-110 contrast-110 md:brightness-100 md:contrast-100"
+          className="absolute inset-0 h-full w-full object-cover object-center scale-[1.02]"
         />
         {/* <div className="absolute inset-0 bg-gradient-to-br from-ivory/45 via-cream/35 to-champagne/45" /> */}
-        <div className="absolute inset-0 bg-black/0 md:bg-black/5" />
+        <div className="absolute inset-0 bg-black/5" />
         {/* Decorative gradients */}
         {/* <motion.div
           className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-gold via-soft-gold to-transparent rounded-full blur-3xl opacity-12"
@@ -82,7 +82,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
 
       {/* Content */}
       <motion.div
-        className="relative z-10 text-center px-5 sm:px-6 max-w-5xl mx-auto"
+        className="relative z-10 text-center px-6 max-w-5xl mx-auto"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -90,12 +90,12 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
 {/* Subtitle */}
 <motion.div 
   variants={itemVariants} 
-  className="mb-4 md:mb-6 flex items-center justify-center gap-2 md:gap-3"
+  className="mb-6 flex items-center justify-center gap-3"
 >
   {/* Moon (Hada) */}
   {/* <Moon className="w-7 h-7 md:w-8 md:h-8 text-gold" /> */}
 
-  <p className="text-black font-sinhala-calligraphy font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-normal md:tracking-wide leading-tight text-shadow-gold drop-shadow-[0_4px_12px_rgba(201,169,97,0.35)]">
+  <p className="text-black font-sinhala-calligraphy font-bold text-5xl tracking-wide leading-tight text-shadow-gold drop-shadow-[0_4px_12px_rgba(201,169,97,0.35)]">
     ශ්‍රී සුභ මංගලම්!
   </p>
 
@@ -104,16 +104,16 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
 </motion.div>
 
         {/* Main Heading */}
-        <motion.div variants={itemVariants} className="mb-4 md:mb-6">
-          <h1 className="font-dancing text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-dark-text leading-[1.1] md:leading-tight">
+        <motion.div variants={itemVariants} className="mb-6">
+          <h1 className="font-dancing text-6xl md:text-8xl font-bold text-dark-text leading-tight">
             <motion.span
               className="block text-deep-maroon font-dancing"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              <span className="block sm:inline">{bride}</span>
-              <span className="block sm:inline">&nbsp;&amp;&nbsp;</span>
-              <span className="block sm:inline">{groom}</span>
+              <span>{bride}</span>
+              <span>&nbsp;&amp;&nbsp;</span>
+              <span>{groom}</span>
             </motion.span>
             {/* <motion.span
               className="block text-gold my-2 md:my-4"
@@ -135,17 +135,17 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
         {/* Divider */}
         <motion.div
           variants={itemVariants}
-          className="flex items-center justify-center gap-3 mb-6 md:mb-8"
+          className="flex items-center justify-center gap-3 mb-8"
         >
           <div className="flex-1 h-0.5 bg-gradient-to-r from-transparent to-gold opacity-50" />
-          <span className="text-xl md:text-2xl text-gold opacity-50">✦</span>
+          <span className="text-2xl text-gold opacity-50">✦</span>
           <div className="flex-1 h-0.5 bg-gradient-to-l from-transparent to-gold opacity-50" />
         </motion.div>
 
         {/* Tagline */}
         <motion.p
           variants={itemVariants}
-          className="text-base sm:text-lg md:text-4xl text-white font-abhaya font-light mb-6 md:mb-8 leading-relaxed px-1"
+          className="text-4xl text-white font-abhaya font-light mb-8 leading-relaxed px-1"
         >
           {tagline}
         </motion.p>
@@ -153,10 +153,10 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
         {/* Wedding Date */}
         <motion.div
           variants={itemVariants}
-          className="mb-8 md:mb-12 inline-block"
+          className="mb-12 inline-block"
         >
-          <div className="px-5 sm:px-7 md:px-8 py-3 md:py-4 bg-gradient-to-r from-ivory to-cream rounded-full border-2 border-gold border-opacity-50 shadow-luxury">
-            <p className="text-lg sm:text-xl md:text-2xl text-deep-maroon font-serif font-bold">
+          <div className="px-8 py-4 bg-gradient-to-r from-ivory to-cream rounded-full border-2 border-gold border-opacity-50 shadow-luxury">
+            <p className="text-2xl text-deep-maroon font-serif font-bold">
               {weddingDateFormatted}
             </p>
           </div>
@@ -165,7 +165,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
         {/* CTA Buttons */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 flex-wrap"
+          className="flex justify-center gap-4 flex-wrap"
         >
           <Button
             onClick={() => document.getElementById('details').scrollIntoView({ behavior: 'smooth' })}
@@ -184,7 +184,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
 
       {/* Scroll Indicator */}
       <motion.div
-        className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 15, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
