@@ -225,6 +225,7 @@ body::before {
   align-items: center;
   justify-content: center;
   gap: clamp(2rem, 5vw, 5rem);
+  transition: gap 900ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .loader-actor {
@@ -242,6 +243,10 @@ body::before {
 .loader-overlay.is-merging .bride-actor,
 .loader-overlay.is-merging .groom-actor {
   transform: translateX(0);
+}
+
+.loader-overlay.is-merging .loader-pair {
+  gap: clamp(0.25rem, 1vw, 0.75rem);
 }
 
 .loader-character {

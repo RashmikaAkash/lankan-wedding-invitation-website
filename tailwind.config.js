@@ -25,6 +25,8 @@ export default {
         serif: ['Noto Serif Sinhala', 'serif'],
         sans: ['Noto Sans Sinhala', 'sans-serif'],
         display: ['Noto Serif Sinhala', 'serif'],
+        dancing: ['"Dancing Script"', 'cursive'],
+        abhaya: ['"Abhaya Libre"', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.8s ease-in',

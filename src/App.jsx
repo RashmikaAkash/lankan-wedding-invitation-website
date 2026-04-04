@@ -51,7 +51,7 @@ function App() {
 
     const hideTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 900);
+    }, 1600);
 
     return () => clearTimeout(hideTimer);
   }, [isMerging]);
