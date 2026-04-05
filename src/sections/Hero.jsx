@@ -88,7 +88,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
 
       {/* Content */}
       <motion.div
-        className="relative z-10 text-center px-6 max-w-5xl mx-auto"
+        className="relative z-10 text-center px-6 py-8 md:py-12 max-w-5xl mx-auto rounded-[2rem] md:rounded-[3rem] bg-[#2f2113]/20 backdrop-blur-[2px] border border-[#D4AF37]/35 shadow-[0_12px_40px_rgba(0,0,0,0.18)]"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -101,7 +101,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
   {/* Moon (Hada) */}
   {/* <Moon className="w-7 h-7 md:w-8 md:h-8 text-gold" /> */}
 
-  <p className="text-black font-sinhala-calligraphy font-bold text-5xl tracking-wide leading-tight text-shadow-gold drop-shadow-[0_4px_12px_rgba(201,169,97,0.35)]">
+  <p className="text-[#D4AF37] font-sinhala-calligraphy font-bold text-5xl tracking-wide leading-tight text-shadow-gold drop-shadow-[0_4px_12px_rgba(201,169,97,0.35)]">
     ශ්‍රී සුභ මංගලම්!
   </p>
 
