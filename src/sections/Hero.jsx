@@ -101,7 +101,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
   {/* Moon (Hada) */}
   {/* <Moon className="w-7 h-7 md:w-8 md:h-8 text-gold" /> */}
 
-  <p className="text-[#D4AF37] font-sinhala-calligraphy font-bold text-5xl tracking-wide leading-tight text-shadow-gold drop-shadow-[0_4px_12px_rgba(201,169,97,0.35)]">
+  <p className="text-[#D4AF37] md:text-[#4A101D] font-sinhala-calligraphy font-bold text-5xl tracking-wide leading-tight text-shadow-gold drop-shadow-[0_4px_12px_rgba(201,169,97,0.35)]">
     ශ්‍රී සුභ මංගලම්!
   </p>
 
@@ -113,7 +113,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
         <motion.div variants={itemVariants} className="mb-1 md:mb-6">
           <h1 className="font-dancing text-6xl md:text-8xl font-bold text-dark-text leading-tight">
             <motion.span
-              className="block text-[#D4AF37] md:text-[#D4AF37] font-dancing"
+              className="block text-[#D4AF37] md:text-[#4A101D] font-dancing"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 3, repeat: Infinity }}
             >

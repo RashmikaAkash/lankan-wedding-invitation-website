@@ -31,12 +31,12 @@ const Couple = ({ couple }) => {
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-20">
-            <h2 className="font-serif text-5xl md:text-6xl font-bold text-deep-maroon mb-6">
-              අපි දෙදෙනා
+            <h2 className="font-dancing text-5xl md:text-6xl font-bold text-deep-maroon mb-6">
+              The Groom & The Bride
             </h2>
             <FloralDivider />
-            <p className="text-dark-text/80 text-lg font-serif italic">
-              එක සිතින් බැඳුණු ორ අත්
+            <p className="text-dark-text/80 text-3xl font-dancing">
+              Destiny brought us together, and love has bound us forever. As we step into our new life together, we cherish the presence and blessings of our beloved family and friends.
             </p>
           </div>
         </ScrollReveal>
@@ -55,7 +55,7 @@ const Couple = ({ couple }) => {
                 <motion.img
                   src={couple.bride.image}
                   alt={couple.bride.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-cover object-[50%_18%] md:object-[50%_20%] group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-maroon via-transparent to-transparent opacity-0 group-hover:opacity-30 transition-opacity duration-500" />
               </div>
@@ -65,7 +65,7 @@ const Couple = ({ couple }) => {
                   <Heart className="w-5 h-5 text-gold" />
                   <div className="h-0.5 flex-1 bg-gold opacity-50" />
                 </div>
-                <h3 className="font-serif text-3xl font-bold text-deep-maroon mb-2 text-center">
+                <h3 className="font-dancing text-3xl font-bold text-deep-maroon mb-2 text-center">
                   {couple.bride.name}
                 </h3>
                 <p className="text-gold font-serif font-semibold mb-4 text-center text-sm uppercase">
@@ -95,7 +95,7 @@ const Couple = ({ couple }) => {
                   <Heart className="w-5 h-5 text-gold" />
                   <div className="h-0.5 flex-1 bg-gold opacity-50" />
                 </div>
-                <h3 className="font-serif text-3xl font-bold text-deep-maroon mb-2 text-center">
+                <h3 className="font-dancing text-3xl font-bold text-deep-maroon mb-2 text-center">
                   {couple.groom.name}
                 </h3>
                 <p className="text-gold font-serif font-semibold mb-4 text-center text-sm uppercase">

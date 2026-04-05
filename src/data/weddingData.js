@@ -1,4 +1,6 @@
 import songTrack from '../assets/Song.mp3';
+import brideImage from '../assets/bride.jpeg';
+import groomImage from '../assets/groom.jpg';
 
 export const weddingData = {
   // === COUPLE NAMES (in Sinhala) ===
@@ -17,16 +19,16 @@ export const weddingData = {
   // === COUPLE DETAILS ===
   couple: {
     bride: {
-      name: 'ආන්‍යා සිල්වා',
-      role: 'වධූ',
-      bio: 'ආන්‍යා කලා ශිල්පී හෙවත් දක්ෂ නර්තනයෙන් ගරු පෑමට योग්‍ය. ඇයගේ සුවිමල සිතින් හා සෝදිසි ස්වභාවය සියලු දෙනාට ප්‍රියමිතය.',
-      image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&h=600&fit=crop'
+      name: 'Amiduni Hiroshika',
+      role: 'Bride',
+      bio: 'විජේදාස මැතිතුමන් සහ එම මැතිණියගේ ආදරණීය දියණියයි. වෘත්තියෙන් ගුරුවරියක වන ඇය, ගුණවත්කමින් හා දයාවෙන් පිරි හදවතක් ඇති යුවතියකි.',
+      image: brideImage
     },
     groom: {
-      name: 'අවන්ත චතුරංග',
-      role: 'වරයා',
-      bio: 'අවන්ත දක්ෂ ඉංජිනේරු හෙවත් සිතින් ගරු පෞද්ගලිකයා. ඔහුගේ ස්වභාවහරුතු හා අත්‍යුත්තර ගුණ ඔහුව සැමට වඩා ප්‍රියෙන්ම බලාගෙන ගනී.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop'
+      name: 'Rashmika Akash',
+      role: 'Groom',
+      bio: 'වසන්ත මැතිතුමන් සහ එම මැතිණියගේ ආදරණීය පුත්‍රයායි. වෘත්තියෙන් මෘදුකාංග ඉංජිනේරුවකු වන ඔහු, බුද්ධිමත් මෙන්ම නිහතමානී ගතිගුණවලින් පිරි තරුණයෙකි.',
+      image: groomImage
     }
   },
 
