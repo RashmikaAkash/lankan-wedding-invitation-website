@@ -87,8 +87,8 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
       </div>
 
       {/* Content */}
-      <motion.div
-        className="relative z-10 text-center px-6 py-8 md:py-12 max-w-5xl mx-auto rounded-[2rem] md:rounded-[3rem] bg-[#2f2113]/20 backdrop-blur-[2px] border border-[#D4AF37]/35 shadow-[0_12px_40px_rgba(0,0,0,0.18)]"
+       <motion.div
+        className="relative z-10 text-center px-6 max-w-5xl mx-auto"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
