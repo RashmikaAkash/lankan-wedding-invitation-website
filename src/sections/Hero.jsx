@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown, Sparkles, Moon, Sun } from 'lucide-react';
 import { Button } from '../components/UI';
 import heroBackground from '../assets/Hero image.png';
+import heroMobileBackground from '../assets/Hero mobile.png';
 
 const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
   const containerVariants = {
@@ -62,7 +63,12 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
         <img
           src={heroBackground}
           alt="Hero background"
-          className="absolute inset-0 h-full w-full object-cover object-center scale-[1.02]"
+          className="absolute inset-0 hidden h-full w-full object-cover object-center scale-[1.02] md:block"
+        />
+        <img
+          src={heroMobileBackground}
+          alt="Hero background mobile"
+          className="absolute inset-0 h-full w-full object-cover object-center scale-[1.02] md:hidden"
         />
         {/* <div className="absolute inset-0 bg-gradient-to-br from-ivory/45 via-cream/35 to-champagne/45" /> */}
         <div className="absolute inset-0 bg-black/5" />
@@ -107,7 +113,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
         <motion.div variants={itemVariants} className="mb-1 md:mb-6">
           <h1 className="font-dancing text-6xl md:text-8xl font-bold text-dark-text leading-tight">
             <motion.span
-              className="block text-deep-maroon font-dancing"
+              className="block text-gold md:text-deep-maroon font-dancing"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 3, repeat: Infinity }}
             >
@@ -145,7 +151,7 @@ const Hero = ({ bride, groom, tagline, weddingDateFormatted }) => {
         {/* Tagline */}
         <motion.p
           variants={itemVariants}
-          className="text-4xl text-white font-abhaya font-light mb-4 md:mb-8 leading-relaxed px-1"
+          className="text-4xl text-gold md:text-white font-abhaya font-light mb-4 md:mb-8 leading-relaxed px-1"
         >
           {tagline}
         </motion.p>
